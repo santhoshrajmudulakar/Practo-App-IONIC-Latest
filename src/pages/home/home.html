@@ -1,43 +1,229 @@
-<ion-grid class="theme_wrapper">
-  <ion-row> 
-    <ion-col col-4 class="color_one">
-      
-      <p><b>Company Profile</b></p>
-    </ion-col>
-    <ion-col col-4 class="color_two">
-       <p><b>Projects</b></p>
-    </ion-col>
-    <ion-col col-4 class="color_three">
-      <p><b>Language</b></p>
-    </ion-col>
-  </ion-row>
-    <ion-row> 
-    <ion-col col-4 class="color_four">
-      
-      <p><b>Company Profile</b></p>
-    </ion-col>
-    <ion-col col-4 class="color_five">
-       <p><b>Projects</b></p>
-    </ion-col>
-    <ion-col col-4 class="color_six">
-      <p><b>Language</b></p>
-    </ion-col>
-  </ion-row>
 
- <ion-row class="home_notify"> 
+<ion-header >
+    <ion-navbar>
+        <ion-buttons left>
+            <button ion-button icon-only >
+                <ion-icon name="arrow-back"></ion-icon>   Back
+            </button>
+        </ion-buttons>
+        <ion-buttons text-right>
+           <div class="list">
+
+                <label class="item item-input item-select">
+                   
+                    <select>
+                       <option disabled selected >-- select --</option>
+                        <option selected>Mumbai</option>
+                        <option >Hyd</option>
+                        <option>Vizag</option>
+                    </select>
+                </label>
+
+            </div>
+        </ion-buttons>
+    </ion-navbar>
+    
+    
+      <ion-searchbar></ion-searchbar>
+      <ion-row class="bg-row">
+      <ion-col col-4>
+       <button ion-button round>Available Today</button>
+
+      </ion-col>
+      <ion-col col-3>
+  <button ion-button round>In Hospital</button>
+      </ion-col>
+      <ion-col col-3 class="filter">
+      ALL FILTERS
+      </ion-col>
+      <ion-col col-1>
+      </ion-col>
+      </ion-row>
+
+      <div class="grid_row">
+      <ion-row class="see-results">
+        
+        You are seeing results from All of Mumbai. Do you want to see results near you?
+        
+      </ion-row>
+      <div col text-right>
+      <button text-right ion-button round class="location">Yes, use my location</button>
+      </div>
+      </div>
+      
+</ion-header>
+<ion-content>
+<ion-slides (ionSlideDidChange)="slideChanged()">
+  <ion-slide>
+  <ion-grid>
+  
+  <ion-row>
     <ion-col col-8>
-     <p class="color_seven">
-       <b>Bangkok Trip
-       </b>       <img src="/assets/aero.gif"/>
-     </p>
-     <p class="color_eight">
-       <img src="assets/companylogo.png"/>
-     </p>
+        <ion-card class="left-wrapper">
+            <ion-list><b>Dr.MadhuSudha Reddy</b></ion-list>
+            <ion-list class="text-opa">Dadar East</ion-list>
+            
+               
+        </ion-card>
+<div class="pull-left">
+       <span><img src="assets/hotel.jpg"/></span>
+                <span><img src="assets/hotel.jpg"/></span>
+                <span><img src="assets/hotel.jpg"/></span>
+        
+  </div>
+  <div class="free">
+       <ion-card class="left-wrapper">  <ion-list class="text-opa">Free * 70 Views</ion-list>
+             <ion-list class="text-spon">SPONSORED</ion-list>
+               
+        </ion-card>
+  </div>
     </ion-col>
-    <ion-col col-4 class="color_nine">
-       <p><b>Projects</b></p>
+    <ion-col col-4>
+      <div text-right>
+          <div class="thumb">
+          <span><img src="assets/like.png"/></span>
+          <span><b>98%</b></span>
+          </div>
+          <div class="vote">(500 Votes)</div>
+            <div class="buttons">
+<button ion-button>BOOK</button>
+      </div>
+      </div>
+    
     </ion-col>
    
   </ion-row>
   
 </ion-grid>
+  </ion-slide>
+  <ion-slide>
+   <ion-grid>
+  
+  <ion-row>
+    <ion-col col-8>
+        <ion-card class="left-wrapper">
+            <ion-list><b>Smile Again</b></ion-list>
+            <ion-list class="text-opa">Dadar East</ion-list>
+            
+               
+        </ion-card>
+<div class="pull-left">
+       <span><img src="assets/hotel.jpg"/></span>
+                <span><img src="assets/hotel.jpg"/></span>
+                <span><img src="assets/hotel.jpg"/></span>
+        
+  </div>
+  <div class="free">
+       <ion-card class="left-wrapper">  <ion-list class="text-opa">Free * 99 Views</ion-list>
+             <ion-list class="text-spon">SPONSORED</ion-list>
+               
+        </ion-card>
+  </div>
+    </ion-col>
+    <ion-col col-4>
+      <div text-right>
+          <div class="thumb">
+          <span><img src="assets/like.png"/></span>
+          <span><b>100%</b></span>
+          </div>
+          <div class="vote">(1000 Votes)</div>
+            <div class="buttons">
+<button ion-button>BOOK</button>
+      </div>
+      </div>
+    
+    </ion-col>
+   
+  </ion-row>
+  
+</ion-grid>
+  </ion-slide>
+ 
+</ion-slides>
+
+<div class="constant-grid">
+ <ion-grid class="">
+  
+  <ion-row>
+    <ion-col col-8>
+        <ion-card class="left-wrapper">
+            <ion-list><b>Dr. Jeevan Shetty</b></ion-list>
+            <ion-list class="text-opa">Periodontist</ion-list>
+            
+               
+        </ion-card>
+<div class="pull-left">
+       <span><img src="assets/hotel.jpg"/></span>
+                <span><img src="assets/hotel.jpg"/></span>
+                <span><img src="assets/hotel.jpg"/></span>
+        
+  </div>
+  <div class="free">
+       <ion-card class="left-wrapper">  <ion-list class="text-opa">Free * 99 Views</ion-list>
+             <ion-list class="visits">22 Yrs exp - $20 - 101 reiews</ion-list>
+               
+        </ion-card>
+  </div>
+    </ion-col>
+    <ion-col col-4>
+      <div text-right>
+          <div class="thumb">
+          <span><img src="assets/like.png"/></span>
+          <span><b>100%</b></span>
+          </div>
+          <div class="vote">(1000 Votes)</div>
+            <div class="buttons">
+<button ion-button>BOOK</button>
+      </div>
+      </div>
+    
+    </ion-col>
+   
+  </ion-row>
+  
+</ion-grid>
+</div>
+
+<div class="constant-grid">
+ <ion-grid class="">
+  
+  <ion-row>
+    <ion-col col-8>
+        <ion-card class="left-wrapper">
+            <ion-list><b>Dr. Parag M. Khatri</b><span> Visits Tomorrow</span></ion-list>
+            <ion-list class="text-opa">Dadar East</ion-list>
+            
+               
+        </ion-card>
+<div class="pull-left">
+       <span><img src="assets/hotel.jpg"/></span>
+                <span><img src="assets/hotel.jpg"/></span>
+                <span><img src="assets/hotel.jpg"/></span>
+        
+  </div>
+  <div class="free">
+       <ion-card class="left-wrapper">  <ion-list class="text-opa">Free * 99 Views</ion-list>
+             <ion-list class="text-spon">SPONSORED</ion-list>
+               
+        </ion-card>
+  </div>
+    </ion-col>
+    <ion-col col-4>
+      <div text-right>
+          <div class="thumb">
+          <span><img src="assets/like.png"/></span>
+          <span><b>100%</b></span>
+          </div>
+          <div class="vote">(1000 Votes)</div>
+            <div class="buttons">
+<button ion-button>BOOK</button>
+      </div>
+      </div>
+    
+    </ion-col>
+   
+  </ion-row>
+  
+</ion-grid>
+</div>
+</ion-content>
